@@ -32,7 +32,6 @@ func AddHandler(w http.ResponseWriter, req *http.Request) {
 			fmt.Println(key, "=>", value)
 		}
 		writeData(req.PostForm["author"][0], req.PostForm["entry"][0])
-		//fmt.Fprintf(w, "Information received: %v\n", req.PostForm["author"][0])
 	}
 }
 
